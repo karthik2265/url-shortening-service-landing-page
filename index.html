@@ -16,7 +16,7 @@
 <body>
 <!-- Navbar -->
   <nav>
-    <div class="nav-link nav-link--logo"></div>
+    <div class="nav-link nav-link--logo logo"></div>
     <div class="nav-links-container">
       <div class=" nav-links-container--left">
         <p class="nav-link">Features</p>
@@ -40,17 +40,31 @@
   </main>
 <!-- url shortener -->
   <div class="url-shortener-div">
-    <input type="text" class="empty" placeholder="Shorten a link here...">
-    <p class="empty">please add a link</p>
+    <input type="text" class="not-empty" placeholder="Shorten a link here...">
+    <p class="not-empty">please add a link</p>
     </input>
     <p class="btn btn--shorten-it">Shorten It!</p>
   </div>
 <!-- shortened links -->
   <div class="shortened-links-div">
     <div class="shortened-link-div">
-      <p class="actual-link">www.google.com</p>
+      <p>www.google.com</p>
       <div>
-        <p class="shortened-link">w3a2.com</p>
+        <p >w3a2.com</p>
+        <p class="btn btn--copy">Copy</p>
+      </div>
+    </div>
+    <div class="shortened-link-div">
+      <p>www.google.com</p>
+      <div>
+        <p >w3a2.com</p>
+        <p class="btn btn--copy">Copy</p>
+      </div>
+    </div>
+    <div class="shortened-link-div">
+      <p>www.google.com</p>
+      <div>
+        <p >w3a2.com</p>
         <p class="btn btn--copy">Copy</p>
       </div>
     </div>
@@ -86,7 +100,7 @@
   </div>
 <!-- Footer -->
 <footer>
-  <div class="logo"></div>
+    <h2 class="logo--footer">Shortly</h2>
   <div class="footer-links">
     <h5 class="footer-links--title">Features</h5>
     <p class="footer-links--link">Link Shortening</p>
@@ -107,10 +121,10 @@
     <p class="footer-links--link">Contact</p>
   </div>
   <div class="footer-icons">
-    <div class="icon icon--facebook"></div>
-    <div class="icon icon--twitter"></div>
-    <div class="icon icon--pinterest"></div>
-    <div class="icon icon--instagram"></div>
+    <span class="icon icon--facebook"></span>
+    <span class="icon icon--twitter"></span>
+    <span class="icon icon--pinterest"></span>
+    <span class="icon icon--instagram"></span>
   </div>
 </footer>
   
