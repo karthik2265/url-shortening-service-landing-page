@@ -30,12 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./ss.jpg)
+![screenshot of webpage](https://raw.githubusercontent.com/karthik2265/url-shortening-service-landing-page/master/ss.png)
 
 ### Links
 
-- Solution URL: [](https://github.com/karthik2265/url-shortening-service-landing-page)
-- Live Site URL: [](https://karthik2265.github.io/url-shortening-service-landing-page/)
+- Solution URL: [open](https://github.com/karthik2265/url-shortening-service-landing-page)
+- Live Site URL: [open](https://karthik2265.github.io/url-shortening-service-landing-page/)
 
 ## My process
 
