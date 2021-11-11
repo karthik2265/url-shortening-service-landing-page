@@ -420,11 +420,65 @@ footer p:not(.footer-links--title):hover {
     overflow: hidden;
   }
 
+  nav {
+    position: relative;
+    overflow: visible;
+  }
+
+  .nav-links-container {
+    visibility: hidden;
+    position: absolute;
+    width: calc(100% - 3rem);
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 20;
+    background-color: var(--Dark-Violet);
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .nav-links-container > * {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links-container--left {
+    border-bottom: 0.1px solid var(--Gray);
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  .nav-links-container p {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .nav-links-container--right,
+  p.btn--signup {
+    width: 100%;
+  }
+
+  i.fas {
+    color: var(--Gray);
+    font-size: 1.5rem;
+  }
+
+  i.fas:hover {
+    cursor: pointer;
+  }
+
   main {
     flex-direction: column-reverse;
     text-align: center;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: -10;
   }
 
   .main--info {
@@ -434,9 +488,11 @@ footer p:not(.footer-links--title):hover {
   }
 
   .main--img {
-    background-position: center;
+    background-position: right;
     width: 800px;
     margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
   }
 
   .url-shortener-div {
