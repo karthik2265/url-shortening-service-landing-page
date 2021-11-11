@@ -117,6 +117,10 @@ nav {
   width: 20%;
 }
 
+i.fas {
+  visibility: hidden;
+}
+
 /* main */
 main {
   display: flex;
@@ -189,20 +193,27 @@ input[type="text"] {
   font-size: 1rem;
 }
 
-input[type="text"].empty {
+input.empty {
+  border: 1px solid;
   border-color: var(--Red);
+  display: inline-block;
+  visibility: visible;
+}
+
+input.empty::placeholder {
   color: var(--Red);
 }
 
 .url-shortener-div p:not(.btn) {
   font-size: 0.8rem;
-  display: none;
+  visibility: hidden;
 }
 
-p.empty {
+.url-shortener-div p.empty {
   color: var(--Red);
   position: absolute;
   bottom: 20px;
+  visibility: visible;
 }
 
 /* shortened links */
@@ -233,13 +244,17 @@ p.empty {
 
 .shortened-link-div > p {
   color: var(--Very-Dark-Violet);
-  width: 75%;
+  width: 52%;
   word-wrap: break-word;
 }
 
 .shortened-link-div > div p:not(.btn) {
   color: var(--Cyan);
   margin-right: 1rem;
+}
+
+.copied {
+  background-color: var(--Dark-Violet);
 }
 
 /* advanced statistics */
@@ -464,6 +479,7 @@ footer p:not(.footer-links--title):hover {
   }
 
   i.fas {
+    visibility: visible;
     color: var(--Gray);
     font-size: 1.5rem;
   }
@@ -493,6 +509,7 @@ footer p:not(.footer-links--title):hover {
     margin-bottom: 1.5rem;
     position: relative;
     z-index: 2;
+    background-position: center;
   }
 
   .url-shortener-div {
